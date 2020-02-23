@@ -47,6 +47,17 @@ $('.nav_checkbox').on('change', function () {
     }
 })
 
+$('#about').waypoint(function (direction) {
+    if (direction == "down") {
+        $('#scrollUp').addClass('scroll_up animated fadeInRight')
+
+    } else {
+        $('#scrollUp').removeClass('scroll_up animated fadeInRight')
+    }
+}, {
+    offset: '10px;'
+});
+
 // SMOOTH SCROLLTOP BUTTON
 $('#scrollUp').on('click', function () {
     $('html,body').animate({
