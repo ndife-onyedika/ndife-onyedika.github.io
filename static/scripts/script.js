@@ -1,5 +1,5 @@
 const ham = document.querySelector("#hamburger");
-const close_ham = document.querySelector("#sidebar > .close > i");
+const close_ham = document.querySelector("#sidebar > .close > svg");
 const sidebar = document.querySelector("#sidebar");
 const mask = document.querySelector("#mask");
 const main = document.querySelector("main");

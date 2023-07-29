@@ -11,11 +11,10 @@
     <title>Ndife Onyedika Michael</title>
     <!-- styles -->
     <link rel='stylesheet' rel="preload" href="static/css/index.css" />
-    <link rel='stylesheet' rel="preload" href="static/vendors/css/jam.min.css" />
-    <link rel="shortcut icon" href="static/images/favicon.png" />
     <!-- scripts -->
-    <script src="static/vendors/scripts/jquery.min.js"></script>
-    <script src="static/vendors/scripts/jquery.waypoints.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script defer src="/static/scripts/script.js"></script>
 </head>
 
@@ -30,7 +29,13 @@
                 <a class="download-resume" href="/static/media/Resume.pdf">Resume</a>
             </nav>
             <span>
-                <i id="hamburger" class="jam jam-menu"></i>
+                <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
             </span>
         </header>
 
@@ -88,31 +93,63 @@
                         <strong>Skills</strong>
                     </span>
                     <div id="skills-wrapper">
-                        <p folder="frontend"> <i class="jam jam-folder-f"></i> Frontend</p>
+                        <p folder="frontend">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-folder">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                </path>
+                            </svg>
+                            Frontend
+                        </p>
                         <ul id="frontend">
-                            <li> <i class="jam jam-minus"></i>Jquery</li>
-                            <li> <i class="jam jam-minus"></i>React</li>
-                            <li> <i class="jam jam-minus"></i>NextJs</li>
+                            <li>- Jquery</li>
+                            <li>- React</li>
+                            <li>- NextJs</li>
                         </ul>
-                        <p folder="backend"><i class="jam jam-folder-f"></i>Backend</p>
+                        <p folder="backend">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-folder">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                </path>
+                            </svg>
+                            Backend
+                        </p>
                         <ul id="backend">
-                            <li> <i class="jam jam-minus"></i>Django</li>
-                            <li> <i class="jam jam-minus"></i>Flask</li>
-                            <li> <i class="jam jam-minus"></i>DRF</li>
-                            <li> <i class="jam jam-minus"></i>REST API</li>
+                            <li>- Django</li>
+                            <li>- Flask</li>
+                            <li>- DRF</li>
+                            <li>- REST API</li>
                         </ul>
-                        <p folder="devop"><i class="jam jam-folder-f"></i>DB/Deploy</p>
+                        <p folder="devop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-folder">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                </path>
+                            </svg>
+                            DB/Deploy
+                        </p>
                         <ul id="devop">
-                            <li> <i class="jam jam-minus"></i>Nginx</li>
-                            <li> <i class="jam jam-minus"></i>Uwsgi</li>
-                            <li> <i class="jam jam-minus"></i>Postgres</li>
-                            <li> <i class="jam jam-minus"></i>ORM</li>
+                            <li>- Nginx</li>
+                            <li>- Uwsgi</li>
+                            <li>- Postgres</li>
+                            <li>- ORM</li>
                         </ul>
-                        <p folder="other"><i class="jam jam-folder-f"></i>Tools</p>
+                        <p folder="other">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-folder">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                </path>
+                            </svg>
+                            Tools
+                        </p>
                         <ul id="other">
-                            <li> <i class="jam jam-minus"></i>Git</li>
-                            <li> <i class="jam jam-minus"></i>Linux</li>
-                            <li> <i class="jam jam-minus"></i>Vscode</li>
+                            <li>- Git</li>
+                            <li>- Linux</li>
+                            <li>- Vscode</li>
                         </ul>
                     </div>
                 </div>
@@ -352,7 +389,12 @@
     <!-- Keep outside of main to not be part of blur filter  -->
     <div id="sidebar">
         <span class="close">
-            <i class="jam jam-close"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-x">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
         </span>
         <a href="#intro"><span>01.</span>Welcome</a>
         <a href="#landing"><span>02.</span>About Me</a>

@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Jakarta";
-    src: url("/static/vendors/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+    src: url("/static/fonts/PlusJakartaSans-VariableFont_wght.ttf");
 }
 
 * {
@@ -345,7 +345,7 @@ header > span {
     padding: 20px;
     background: transparent;
 }
-#sidebar span.close i {
+#sidebar span.close svg {
     font-size: 40px;
     height: 40px;
     width: 40px;
@@ -507,6 +507,12 @@ header > span {
     }
 }
 
+@media (max-width: 37.5em) {
+    #landing,
+    #portfolio {
+        padding: 5rem 10%;
+    }
+}
 /* LANDING */
 #landing {
     height: auto;
@@ -514,7 +520,7 @@ header > span {
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 150px 10%;
+    padding: 15rem 10%;
 }
 
 #landing #about {
@@ -523,7 +529,7 @@ header > span {
     height: auto;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr minmax(150px, 200px);
+    grid-template-columns: 1fr minmax(15rem, 200px);
     grid-gap: 30px;
 }
 
@@ -590,9 +596,10 @@ header > span {
     color: var(--text-color);
 }
 
-#landing #about #skills #skills-wrapper p i {
-    color: var(--theme-color);
-    font-size: 2rem;
+#landing #about #skills #skills-wrapper p svg {
+    stroke: var(--theme-color);
+    width: 2rem;
+    height: 2rem;
     margin-right: 10px;
     margin-top: -10px;
 }
@@ -606,7 +613,7 @@ header > span {
     color: var(--text-color-dark);
 }
 
-#landing #about #skills #skills-wrapper ul li i {
+#landing #about #skills #skills-wrapper ul li svg {
     margin-right: 5px;
 }
 
@@ -620,11 +627,10 @@ header > span {
 #portfolio {
     width: 100%;
     height: auto;
-    padding: 200px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 150px 10%;
+    padding: 15rem 10%;
 }
 
 #portfolio #portfolio-wrapper {
@@ -811,9 +817,9 @@ header > span {
     cursor: pointer;
 }
 
-#contact-board .contact-socials a i {
-    font-size: 25px;
-    color: inherit;
+#contact-board .contact-socials a svg {
+    width: 25px;
+    height: 25px;
     transition: transform 0.6s;
 }
 
