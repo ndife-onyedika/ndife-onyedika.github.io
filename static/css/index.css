@@ -507,12 +507,6 @@ header > span {
     }
 }
 
-@media (max-width: 37.5em) {
-    #landing,
-    #portfolio {
-        padding: 5rem 10%;
-    }
-}
 /* LANDING */
 #landing {
     height: auto;
@@ -859,4 +853,12 @@ footer p {
     color: var(--theme-color);
     font-family: var(--font-mono);
     font-weight: 400;
+}
+
+@media (max-width: 37.5em) {
+    #landing,
+    #portfolio,
+    #contact-wrapper {
+        padding: 5rem 10%;
+    }
 }
